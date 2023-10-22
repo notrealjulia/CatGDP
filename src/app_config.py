@@ -29,7 +29,7 @@ POST_SUMMARY_NOTE = ("The summary ends. And here are the most recent two message
 
 
 NLP_MODEL_NAME = "gpt-3.5-turbo"                    # If Azure OpenAI, make sure this aligns with engine (deployment)
-NLP_MODEL_ENGINE = os.getenv("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", None) # If Azure OpenAI, make sure this aligns with model (of deployment)
+NLP_MODEL_ENGINE = os.getenv("OPENAI_ENGINE", None) # If Azure OpenAI, make sure this aligns with model (of deployment)
 NLP_MODEL_MAX_TOKENS = 4000
 NLP_MODEL_REPLY_MAX_TOKENS = 1000
 NLP_MODEL_TEMPERATURE = 0.8
